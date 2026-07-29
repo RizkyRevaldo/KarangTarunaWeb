@@ -71,7 +71,7 @@ export default function TentangPage() {
         <div className="relative min-h-[70vh] flex flex-col justify-between overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
-              src="/hero-bg.jpeg"
+              src="/tentangkami.jpeg"
               alt="Karang Taruna Unit 05 Cengkareng Timur"
               className="w-full h-full object-cover object-center filter brightness-[0.7] contrast-[1.05]"
             />
