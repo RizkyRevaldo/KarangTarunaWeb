@@ -3,60 +3,156 @@ import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 
 export default function TentangPage() {
-  // Data Struktur Organisasi Karang Taruna
+  // Data Struktur Organisasi Karang Taruna dengan Foto
   const strukturOrganisasi = [
     {
       divisi: "Pembina",
       anggota: [
-        { nama: "Om Wawan", jabatan: "Pembina" }
+        { 
+          nama: "Om Wawan", 
+          jabatan: "Pembina",
+          foto: "/public/image.png" // Tambahkan path foto
+        }
       ]
     },
     {
       divisi: "Pengurus Inti",
       anggota: [
-        { nama: "Rendy Rasya Hermawan", jabatan: "Ketua" },
-        { nama: "Airin Nurhaliza", jabatan: "Sekretaris" },
-        { nama: "Chelsea Adistiya Rifai", jabatan: "Bendahara" }
+        { 
+          nama: "Rendy Rasya Hermawan", 
+          jabatan: "Ketua",
+          foto: "/public/image.png"
+        },
+        { 
+          nama: "Airin Nurhaliza", 
+          jabatan: "Sekretaris",
+          foto: "/public/image.png"
+        },
+        { 
+          nama: "Chelsea Adistiya Rifai", 
+          jabatan: "Bendahara",
+          foto: "/public/image.png"
+        }
       ]
     },
     {
       divisi: "Divisi PDD",
       anggota: [
-        { nama: "Rizky Revaldo", jabatan: "Staff" },
-        { nama: "Nahla Wirdasari", jabatan: "Staff" },
-        { nama: "Akmal Syahroni", jabatan: "Staff" },
-        { nama: "Yusuf Prihantoro", jabatan: "Staff" }
+        { 
+          nama: "Rizky Revaldo", 
+          jabatan: "Staff",
+          foto: "/public/image.png"
+        },
+        { 
+          nama: "Nahla Wirdasari", 
+          jabatan: "Staff",
+          foto: "/public/image.png"
+        },
+        { 
+          nama: "Akmal Syahroni", 
+          jabatan: "Staff",
+          foto: "/public/image.png"
+        },
+        { 
+          nama: "Yusuf Prihantoro", 
+          jabatan: "Staff",
+          foto: "/public/image.png"
+        }
       ]
     },
     {
       divisi: "Divisi Humas",
       anggota: [
-        { nama: "Dava Kurniansyah", jabatan: "Staff" },
-        { nama: "Desti yana", jabatan: "Staff" },
-        { nama: "Nifah nur aini", jabatan: "Staff" },
-        { nama: "Juan Nabil Pratama", jabatan: "Staff" },
-        { nama: "Meita Dewi", jabatan: "Staff" }
+        { 
+          nama: "Dava Kurniansyah", 
+          jabatan: "Staff",
+          foto: "/public/image.png"
+        },
+        { 
+          nama: "Desti Yana", 
+          jabatan: "Staff",
+          foto: "/public/image.png"
+        },
+        { 
+          nama: "Nifah Nur Aini", 
+          jabatan: "Staff",
+          foto: "/public/image.png"
+        },
+        { 
+          nama: "Juan Nabil Pratama", 
+          jabatan: "Staff",
+          foto: "/public/image.png"
+        },
+        { 
+          nama: "Meita Dewi", 
+          jabatan: "Staff",
+          foto: "/public/image.png"
+        }
       ]
     },
     {
       divisi: "Divisi Olahraga",
       anggota: [
-        { nama: "Rafi Alfarizy", jabatan: "Staff" },
-        { nama: "Ridho syafiq kusuma", jabatan: "Staff" },
-        { nama: "Rangga Rizkiyansyah p", jabatan: "Staff" },
-        { nama: "Daffa Almer Dzaky", jabatan: "Staff" },
-        { nama: "Abdullah Firdaus Syagalih", jabatan: "Staff" },
-        { nama: "Rizal", jabatan: "Staff" }
+        { 
+          nama: "Rafi Alfarizy", 
+          jabatan: "Staff",
+          foto: "/public/image.png"
+        },
+        { 
+          nama: "Ridho Syafiq Kusuma", 
+          jabatan: "Staff",
+          foto: "/public/image.png"
+        },
+        { 
+          nama: "Rangga Rizkiyansyah P", 
+          jabatan: "Staff",
+          foto: "/public/image.png"
+        },
+        { 
+          nama: "Daffa Almer Dzaky", 
+          jabatan: "Staff",
+          foto: "/public/image.png"
+        },
+        { 
+          nama: "Abdullah Firdaus Syagalih", 
+          jabatan: "Staff",
+          foto: "/public/image.png"
+        },
+        { 
+          nama: "Rizal", 
+          jabatan: "Staff",
+          foto: "/public/image.png"
+        }
       ]
     },
     {
       divisi: "Divisi Agama",
       anggota: [
-        { nama: "Fitriyanti", jabatan: "Staff" },
-        { nama: "Syafiqah nirmala", jabatan: "Staff" },
-        { nama: "Junita eka rizky yani", jabatan: "Staff" },
-        { nama: "Rafi Alfarizy", jabatan: "Staff" },
-        { nama: "Verlita Avrilya. P", jabatan: "Staff" }
+        { 
+          nama: "Fitriyanti", 
+          jabatan: "Staff",
+          foto: "/public/image.png"
+        },
+        { 
+          nama: "Syafiqah Nirmala", 
+          jabatan: "Staff",
+          foto: "/public/image.png"
+        },
+        { 
+          nama: "Junita Eka Rizky Yani", 
+          jabatan: "Staff",
+          foto: "/public/image.png"
+        },
+        { 
+          nama: "Rafi Alfarizy", 
+          jabatan: "Staff",
+          foto: "/public/image.png"
+        },
+        { 
+          nama: "Verlita Avrilya P", 
+          jabatan: "Staff",
+          foto: "/public/image.png"
+        }
       ]
     }
   ];
@@ -71,7 +167,7 @@ export default function TentangPage() {
         <div className="relative min-h-[70vh] flex flex-col justify-between overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
-              src="/tentangkami.jpeg"
+              src="/hero-bg.jpeg"
               alt="Karang Taruna Unit 05 Cengkareng Timur"
               className="w-full h-full object-cover object-center filter brightness-[0.7] contrast-[1.05]"
             />
@@ -175,49 +271,60 @@ export default function TentangPage() {
 
           <div className="w-full border-t border-dashed border-white/30" />
 
-          {/* SECTION: ANGGOTA KAMI (STRUKTUR KEPENGURUSAN) */}
+          {/* ================= SECTION: ANGGOTA KAMI (VERSION 2 - MODERN) ================= */}
           <div>
             <h2 className="font-bree text-2xl sm:text-3xl text-center text-white tracking-wide mb-12">
               Anggota Kami
             </h2>
 
-            <div className="space-y-12">
+            <div className="space-y-16">
               {strukturOrganisasi.map((item, index) => (
                 <div key={index} className="w-full">
                   
-                  {/* Judul Divisi dengan Bullet Putih */}
-                  <div className="flex items-center space-x-3 mb-6 pl-2 sm:pl-4">
-                    <span className="w-2 h-2 rounded-full bg-white shadow-sm"></span>
-                    <h3 className="font-bree text-xl sm:text-2xl text-white tracking-wide">
+                  {/* Judul Divisi dengan Garis Dekoratif */}
+                  <div className="flex items-center gap-4 mb-8">
+                    <div className="flex-1 h-px bg-gradient-to-r from-transparent to-white/30" />
+                    <h3 className="font-bree text-2xl sm:text-3xl text-white tracking-wide whitespace-nowrap">
                       {item.divisi}
                     </h3>
+                    <div className="flex-1 h-px bg-gradient-to-l from-transparent to-white/30" />
                   </div>
 
-                  {/* Grid Kartu Anggota Rata Tengah */}
-                  <div className="flex flex-wrap justify-center gap-5 sm:gap-6">
+                  {/* Grid Kartu Anggota dengan Foto */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                     {item.anggota.map((anggota, idx) => (
                       <div 
                         key={idx} 
-                        className="bg-white rounded-[1.5rem] p-6 w-[260px] flex flex-col items-center justify-center text-center shadow-xl border-b-4 border-slate-200 transform transition-transform hover:-translate-y-1 hover:shadow-2xl"
+                        className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform transition-all duration-300 hover:-translate-y-2"
                       >
-                        {/* Logo / Foto Anggota */}
-                        <div className="w-20 h-20 mb-4 bg-slate-100 rounded-full p-2 shadow-inner flex items-center justify-center">
+                        {/* Foto dengan Aspect Ratio 4:3 */}
+                        <div className="relative w-full aspect-[4/3] bg-gradient-to-br from-red-400 to-red-600 overflow-hidden">
                           <img 
-                            src="/logo-karang-taruna.png" 
+                            src={anggota.foto || "/default-avatar.png"} 
                             alt={anggota.nama} 
-                            className="w-full h-full object-contain filter drop-shadow-sm"
+                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            onError={(e) => {
+                              e.target.src = "/default-avatar.png"; // Fallback jika foto tidak ada
+                            }}
                           />
+                          
+                          {/* Badge Jabatan di Pojok Kiri Bawah */}
+                          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4">
+                            <span className="inline-block bg-red-600 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
+                              {anggota.jabatan}
+                            </span>
+                          </div>
                         </div>
                         
-                        {/* Nama */}
-                        <h4 className="font-bree text-slate-800 text-lg leading-tight mb-1">
-                          {anggota.nama}
-                        </h4>
-                        
-                        {/* Jabatan */}
-                        <p className="font-poppins text-xs sm:text-sm text-slate-500 font-medium">
-                          {anggota.jabatan}
-                        </p>
+                        {/* Info Anggota */}
+                        <div className="p-4 text-center">
+                          <h4 className="font-bree text-slate-800 text-base sm:text-lg leading-tight">
+                            {anggota.nama}
+                          </h4>
+                          <p className="font-poppins text-xs sm:text-sm text-slate-500 mt-1">
+                            {anggota.jabatan}
+                          </p>
+                        </div>
                       </div>
                     ))}
                   </div>
