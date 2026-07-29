@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Hero() {
   return (
@@ -19,12 +20,12 @@ export default function Hero() {
         <div className="w-full max-w-lg h-[2px] bg-white/70 mb-8 shadow-sm" />
 
         <div className="mb-12">
-          <a
-            href="#kegiatan"
+          <Link
+            to="/kegiatan"
             className="font-poppins inline-block px-8 py-3.5 rounded-2xl bg-red-600 hover:bg-red-700 border border-red-500/60 text-white font-extrabold text-base shadow-xl shadow-red-950/60 transition-all transform hover:-translate-y-0.5 active:translate-y-0"
           >
             Lihat Kegiatan Kami
-          </a>
+          </Link>
         </div>
 
         {/* Badges Statistik Hero Ala BEM FEB UI */}

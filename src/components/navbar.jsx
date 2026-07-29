@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -8,7 +9,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 h-20 flex items-center justify-between">
         
         {/* Logo Brand Custom */}
-        <div className="flex items-center space-x-3 cursor-pointer">
+        <Link to="/" className="flex items-center space-x-3 cursor-pointer">
           <img 
             src="/logo-karang-taruna.png" 
             alt="Logo Karang Taruna RW 05" 
@@ -22,14 +23,14 @@ export default function Navbar() {
               UNIT 05 CENGKARENG TIMUR
             </span>
           </div>
-        </div>
+        </Link>
 
         {/* Desktop Navigation Links */}
         <nav className="hidden md:flex items-center space-x-8 text-sm font-bold tracking-wider">
-          <a href="#beranda" className="text-white border-b-2 border-white pb-1 transition-all">BERANDA</a>
-          <a href="#tentang" className="text-white/90 hover:text-white hover:border-b-2 hover:border-white pb-1 transition-all">TENTANG KAMI</a>
-          <a href="#kegiatan" className="text-white/90 hover:text-white hover:border-b-2 hover:border-white pb-1 transition-all">KEGIATAN</a>
-          <a href="#kontak" className="text-white/90 hover:text-white hover:border-b-2 hover:border-white pb-1 transition-all">KONTAK KAMI</a>
+          <Link to="/" className="text-white hover:border-b-2 hover:border-white pb-1 transition-all">BERANDA</Link>
+          <Link to="/tentang" className="text-white/90 hover:text-white hover:border-b-2 hover:border-white pb-1 transition-all">TENTANG KAMI</Link>
+          <Link to="/kegiatan" className="text-white/90 hover:text-white hover:border-b-2 hover:border-white pb-1 transition-all">KEGIATAN</Link>
+          <Link to="/kontak" className="text-white/90 hover:text-white hover:border-b-2 hover:border-white pb-1 transition-all">KONTAK KAMI</Link>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -53,10 +54,10 @@ export default function Navbar() {
       {/* Mobile Dropdown Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden bg-red-700 border-t border-red-800 px-6 py-4 space-y-3 font-semibold text-sm">
-          <a href="#beranda" className="block text-white py-1">BERANDA</a>
-          <a href="#tentang" className="block text-white/90 hover:text-white py-1">TENTANG KAMI</a>
-          <a href="#kegiatan" className="block text-white/90 hover:text-white py-1">KEGIATAN</a>
-          <a href="#kontak" className="block text-white/90 hover:text-white py-1">KONTAK KAMI</a>
+          <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className="block text-white py-1">BERANDA</Link>
+          <Link to="/tentang" onClick={() => setIsMobileMenuOpen(false)} className="block text-white/90 hover:text-white py-1">TENTANG KAMI</Link>
+          <Link to="/kegiatan" onClick={() => setIsMobileMenuOpen(false)} className="block text-white/90 hover:text-white py-1">KEGIATAN</Link>
+          <Link to="/kontak" onClick={() => setIsMobileMenuOpen(false)} className="block text-white/90 hover:text-white py-1">KONTAK KAMI</Link>
         </div>
       )}
     </header>
